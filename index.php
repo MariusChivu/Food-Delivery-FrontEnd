@@ -1,6 +1,6 @@
 <?php include("continut/header.php");
 include("continut/meniu.php"); ?>
-
+gdfgdsf
 <div class='container header-locatie'>
 	<div class='row'>
 		<div class='col-lg-7'>
