@@ -64,6 +64,23 @@
 						<td>26.40 RON</td>
 						<td><i class="fas fa-trash pointer"></i></td>
 					</tr>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>Taxa livrare</td>
+						<td>7.99</td>
+						<td>RON</td>
+					</tr>
+
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td>Total cos</td>
+						<td>192.39</td>
+						<td>RON</td>
+					</tr>
 
 				</table>
 
