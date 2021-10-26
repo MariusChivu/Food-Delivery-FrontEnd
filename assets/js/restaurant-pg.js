@@ -79,6 +79,16 @@ function inArray(cauta) {
 	}
 }
 
+function createProd(n1, n) {
+	var divMenu = document.getElementById("meniu-item");
+	var divCat = document.getElementById("restaurant-categorie");
+	var xn = n1
+	var yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
+	divMenu.innerHTML += yn;
+	divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
+
+}
+
 function restaurantPage() {
 	for(let i = 0; i < restaurante.length; i++) {
 		var url_string = window.location.href;
@@ -117,65 +127,47 @@ function restaurantPage() {
 				if(n1 != "") {
 					xn = n1
 					n = 0;
-					yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
-					divMenu.innerHTML += yn;
-					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
+					createProd(xn, n)
 				}
 				if(n2 != "") {
 					xn = n2;
 					n = n+1;
-					yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
-					divMenu.innerHTML += yn;
-					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
+					createProd(xn, n)
 				}
 				if(n3 != "") {
 					xn = n3;
 					n = n+1;
-					yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
-					divMenu.innerHTML += yn;
-					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
+					createProd(xn, n)
 				}
 				if(n4 != "") {
 					xn = n4;
 					n = n+1;
-					yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
-					divMenu.innerHTML += yn;
-					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
+					createProd(xn, n)
 				}
 				if(n5 != "") {
 					xn = n5;
 					n = n+1;
-					yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
-					divMenu.innerHTML += yn;
-					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
+					createProd(xn, n)
 				}
 				if(n6 != "") {
 					xn = n6;
 					n = n+1;
-					yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
-					divMenu.innerHTML += yn;
-					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
+					createProd(xn, n)
 				}
 				if(n7 != "") {
 					xn = n7;
 					n = n+1;
-					yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
-					divMenu.innerHTML += yn;
-					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
+					createProd(xn, n)
 				}
 				if(n8 != "") {
 					xn = n8;
 					n = n+1;
-					yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
-					divMenu.innerHTML += yn;
-					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
+					createProd(xn, n)
 				}
 				if(n9 != "") {
 					xn = n9;
 					n = n+1;
-					yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
-					divMenu.innerHTML += yn;
-					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
+					createProd(xn, n)
 				}
 		
 				for(let z= 0; z < produseRetaurant[img].length; z++) {
