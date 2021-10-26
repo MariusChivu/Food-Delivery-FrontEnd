@@ -2,7 +2,7 @@
 	<div class="modal-dialog modal-dialog-scrollable modal-lg">
 		<div class="modal-content">
 			<div class="modal-header">
-				<h4 class="modal-title"><i class="fas fa-shopping-cart"></i> Cosul tau</h4>
+				<h4 class="modal-title"><i class="fas fa-shopping-cart"></i> Coșul tău</h4>
 				<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 			</div>
 			<div class="modal-body">
@@ -11,7 +11,7 @@
 					<th>#</th>
 					<th>Nume</th>
 					<th>Cantitate</th>
-					<th>Pret</th>
+					<th>Preț</th>
 					<th>Total</th>
 					<th><i class="fas fa-trash"></i></th>
 					<tr>
@@ -66,7 +66,7 @@
 						<td></td>
 						<td></td>
 						<td></td>
-						<td>Taxa livrare</td>
+						<td>Taxă de livrare</td>
 						<td>7.99</td>
 						<td>RON</td>
 					</tr>
@@ -74,15 +74,15 @@
 						<td></td>
 						<td></td>
 						<td></td>
-						<td>Total cos</td>
+						<td>Total coș</td>
 						<td>192.39</td>
 						<td>RON</td>
 					</tr>
 				</table>
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-success" data-bs-dismiss="modal">Finalizare comanda</button>
-				<button type="button" class="btn btn-warning" data-bs-dismiss="modal">Resetare cos</button>
+				<button type="button" class="btn btn-success" data-bs-dismiss="modal">Finalizare comandă</button>
+				<button type="button" class="btn btn-warning" data-bs-dismiss="modal">Resetare coș</button>
 				<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Închide</button>
 			</div>
 		</div>
