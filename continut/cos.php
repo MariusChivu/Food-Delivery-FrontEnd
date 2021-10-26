@@ -72,7 +72,6 @@
 						<td>7.99</td>
 						<td>RON</td>
 					</tr>
-
 					<tr>
 						<td></td>
 						<td></td>
