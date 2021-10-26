@@ -7,7 +7,6 @@
 			</div>
 			<div class="modal-body">
 				<h2>McDonald`s</h2>
-
 				<table class='table table-striped table-hover table-cos'>
 					<th>#</th>
 					<th>Nume</th>
@@ -15,7 +14,6 @@
 					<th>Pret</th>
 					<th>Total</th>
 					<th><i class="fas fa-trash"></i></th>
-
 					<tr>
 						<td><img src='assets/img/restaurante/mcdonalds/prod0.webp'></td>
 						<td>HOME MENU</td>
@@ -80,11 +78,7 @@
 						<td>192.39</td>
 						<td>RON</td>
 					</tr>
-
 				</table>
-
-
-			
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-success" data-bs-dismiss="modal">Finalizare comanda</button>
