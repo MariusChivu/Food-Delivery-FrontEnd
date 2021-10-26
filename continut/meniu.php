@@ -13,7 +13,7 @@
 		<div class='collapse navbar-collapse' id='navbarCollapse'>
 			<ul class='navbar-nav'>
 				<li class='nav-item'><a class='nav-link' href='index.php' data-bs-toggle="modal" data-bs-target="#conectare"><i class="fas fa-user-circle"></i> Autentificare</a></li>
-				<li class='nav-item'><a class='nav-link' href='#'><i class="fas fa-shopping-bag"></i> <sup>1</sup></a></li>
+				<li class='nav-item'><a class='nav-link' href='index.php' data-bs-toggle="modal" data-bs-target="#cos"><i class="fas fa-shopping-cart"></i></a></li>
 			</ul>
 		</div>
 
