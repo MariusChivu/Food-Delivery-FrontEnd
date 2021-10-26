@@ -178,7 +178,6 @@ function restaurantPage() {
 					var pret = produseRetaurant[img][z].pret;
 					var cat = produseRetaurant[img][z].cat;
 					var divProd = document.getElementById(dvProd);
-
 					divProd.innerHTML += `<li class='list-group-item col-md-5 m-2 p-3 border border-dark d-flex justify-content-between align-items-center pointer produs' id='prod${z}'><div class='produs-text'><h4>${nume}</h4><p>${text}</p><p class='pret'>${pret} RON</p></div><div class='produs-img'><img src='assets/img/restaurante/${img}/prod${imgp}.webp' alt='${nume}' width='150px'></div></li>`;	
 				}
 			}
