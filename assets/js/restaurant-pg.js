@@ -119,63 +119,63 @@ function restaurantPage() {
 					n = 0;
 					yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
 					divMenu.innerHTML += yn;
-					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row" id="divProd${n}"></ul></div>`;
+					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
 				}
 				if(n2 != "") {
 					xn = n2;
 					n = n+1;
 					yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
 					divMenu.innerHTML += yn;
-					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row" id="divProd${n}"></ul></div>`;
+					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
 				}
 				if(n3 != "") {
 					xn = n3;
 					n = n+1;
 					yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
 					divMenu.innerHTML += yn;
-					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row" id="divProd${n}"></ul></div>`;
+					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
 				}
 				if(n4 != "") {
 					xn = n4;
 					n = n+1;
 					yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
 					divMenu.innerHTML += yn;
-					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row" id="divProd${n}"></ul></div>`;
+					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
 				}
 				if(n5 != "") {
 					xn = n5;
 					n = n+1;
 					yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
 					divMenu.innerHTML += yn;
-					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row" id="divProd${n}"></ul></div>`;
+					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
 				}
 				if(n6 != "") {
 					xn = n6;
 					n = n+1;
 					yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
 					divMenu.innerHTML += yn;
-					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row" id="divProd${n}"></ul></div>`;
+					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
 				}
 				if(n7 != "") {
 					xn = n7;
 					n = n+1;
 					yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
 					divMenu.innerHTML += yn;
-					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row" id="divProd${n}"></ul></div>`;
+					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
 				}
 				if(n8 != "") {
 					xn = n8;
 					n = n+1;
 					yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
 					divMenu.innerHTML += yn;
-					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row" id="divProd${n}"></ul></div>`;
+					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
 				}
 				if(n9 != "") {
 					xn = n9;
 					n = n+1;
 					yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
 					divMenu.innerHTML += yn;
-					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row" id="divProd${n}"></ul></div>`;
+					divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
 				}
 		
 				for(let z= 0; z < produseRetaurant[img].length; z++) {
@@ -187,7 +187,7 @@ function restaurantPage() {
 					var cat = produseRetaurant[img][z].cat;
 					var divProd = document.getElementById(dvProd);
 
-					divProd.innerHTML += `<li class='list-group-item col-md-6 p-3 border border-dark d-flex justify-content-between align-items-center pointer produs' id='prod${z}'><div class='produs-text'><h4>${nume}</h4><p>${text}</p><p class='pret'>${pret} RON</p></div><div class='produs-img'><img src='assets/img/restaurante/${img}/prod${imgp}.webp' alt='${nume}' width='150px'></div></li>`;	
+					divProd.innerHTML += `<li class='list-group-item col-md-5 m-2 p-3 border border-dark d-flex justify-content-between align-items-center pointer produs' id='prod${z}'><div class='produs-text'><h4>${nume}</h4><p>${text}</p><p class='pret'>${pret} RON</p></div><div class='produs-img'><img src='assets/img/restaurante/${img}/prod${imgp}.webp' alt='${nume}' width='150px'></div></li>`;	
 				}
 			}
 				
