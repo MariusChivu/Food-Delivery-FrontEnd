@@ -22,3 +22,23 @@ body {
 	-webkit-backdrop-filter: blur(7px);
 	box-shadow: 0px 0px 5px 0px $shadowColor;
 }
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+  
+
+::-webkit-scrollbar-track {
+	background: $white; 
+	border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+	background: $scrollColor1;
+	border-radius: 10px; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+	background: $scrollColor2;
+	border-radius: 10px;
+}
