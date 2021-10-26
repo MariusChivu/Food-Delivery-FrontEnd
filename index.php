@@ -81,7 +81,7 @@ include("continut/meniu.php"); ?>
 			<li class='list-group-item'>1 Activează locația pentru a vedea restaurantele din zonă</li>
 			<li class='list-group-item'>2 Alege restaurantul dorit</li>
 			<li class='list-group-item'>3 Selectează preparatele tale și adaugă produsele în coșul tău</li>
-			<li class='list-group-item'>4 Selectează "Continuă la Checkout"</li>
+			<li class='list-group-item'>4 Selectează "Finalizare comandă"</li>
 			<li class='list-group-item'>5 Confirmă comanda și introdu detaliile adresei unde dorești livrarea</li>
 			<li class='list-group-item'>6 Plătește și așteaptă sș ajungă mâncarea</li>
 			<li class='list-group-item'></li>
