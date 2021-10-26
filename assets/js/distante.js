@@ -79,8 +79,3 @@ function veziDistanta(vezi) {
 	}
 	return distanta;
 }
-
-$(document).ready(function() {
-	$('#cos').modal('show');
-});
-
