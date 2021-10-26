@@ -20,7 +20,7 @@ include("continut/meniu.php"); ?>
 	<div class='container restaurant-meniu glass-bg mt-5 mb-5'>
 		<div class='row p-2' id='meniu'>
 			<ul class="nav" id="meniu-item">
-				<!-- meniu generat din javascript -->
+				<!-- meniu generat din javascript  -->
 			</ul>
 		</div>
 	</div>
