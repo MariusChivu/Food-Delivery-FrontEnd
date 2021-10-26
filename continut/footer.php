@@ -53,7 +53,7 @@
 		</div>
 	</div>
 </div>
-
+<?php include("cos.php"); ?>
 </body>
 </html>
 
