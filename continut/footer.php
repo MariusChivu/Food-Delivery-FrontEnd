@@ -5,8 +5,6 @@
 			<a href='https://www.google.com/maps/place/Bucharest/@44.4379853,25.9545516,11z/data=!3m1!4b1!4m5!3m4!1s0x40b1f93abf3cad4f:0xac0632e37c9ca628!8m2!3d44.4267674!4d26.1025384'>
 				<i class="fas fa-map-marker-alt"></i> București, Str Centrală nr 1</a>
 			<a href='tel: 0123456789'><i class="fas fa-phone-alt"></i> 0123456789</a>
-			<a href='tel: 0123456789'><i class="fas fa-phone-alt"></i> 0123456789</a>
-			<a href='mail: contact@mail.com'><i class="fas fa-envelope"></i> contact@mail.com</a>
 			<a href='mail: contact@mail.com'><i class="fas fa-envelope"></i> contact@mail.com</a>
 		</div>
 		<div class='col-md-3'>
