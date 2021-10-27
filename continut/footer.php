@@ -8,7 +8,7 @@
 			<a href='mail: contact@mail.com'><i class="fas fa-envelope"></i> contact@mail.com</a>
 		</div>
 		<div class='col-md-3'>
-			<h3 class='footer-about'><img src='assets/img/logo.png' alt='Food Delivery'> &nbsp;&nbsp; Food Delivery</h3>
+			<h3 class='footer-about'><img src='assets/img/logo2.png' alt='Food Delivery'> &nbsp;&nbsp; Food Delivery</h3>
 			<p>Necessary, making this the first true generator on the Internet. 
 				It uses a dictionary of over 200 Latin words, 
 				combined with.</p>
