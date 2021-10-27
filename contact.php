@@ -14,11 +14,9 @@ include("continut/meniu.php"); ?>
 		<div class='col-md-6 mt-5 mb-5'>
 			<h3><i class="fas fa-phone-alt"></i> Telefon</h3>
 			<h4>0123456789</h4>
-			<h4>0123456789</h4>
 		</div>
 		<div class='col-md-6 mt-5 mb-5'>
 			<h3><i class="fas fa-envelope"></i> E-mail</h3>
-			<h4>contact@mail.com</h4>
 			<h4>contact@mail.com</h4>
 		</div>
 	</div>
