@@ -34,6 +34,10 @@
 							<span class="input-group-text">Parola</span>
 							<input type="password" class="form-control" placeholder="Introdu parola" autocomplete="off" reuqired>
 						</div>
+						<div class="modal-footer">
+							<a href="cont.php" class="btn btn-success">Conectare</a>
+							<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Închide</button>
+						</div>
 					</div>
 
 					<div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
@@ -53,16 +57,12 @@
 							<span class="input-group-text">Parola</span>
 							<input type="password" class="form-control" placeholder="Introdu parola" autocomplete="off" reuqired>
 						</div>
-						<div class="input-group mt-4 mb-4">
+						<div class="modal-footer">
 							<button type="button" class="btn btn-success" data-bs-dismiss="modal">Înregistrare</button>
+							<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Închide</button>
 						</div>
 					</div>
 				</div>
-				
-			</div>
-			<div class="modal-footer">
-				<a href="cont.php" class="btn btn-success">Conectare</a>
-				<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Închide</button>
 			</div>
 		</div>
 	</div>
