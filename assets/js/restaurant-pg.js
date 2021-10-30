@@ -57,6 +57,7 @@ function listaRestaurante(sortare) {
 	}
 }
 
+// de facut sortarea folosind algoritm !!!
 function popRest() {
 	restaurante = restaurante.sort(function(a,b) {
 		return b.star - a.star;
@@ -111,8 +112,6 @@ function restaurantPage() {
 
 				let n;
 				var xn;
-				var divMenu = document.getElementById("meniu-item");
-				var divCat = document.getElementById("restaurant-categorie");
 				var n1 = meniuRestaurant[img][0].n1;
 				var n2 = meniuRestaurant[img][0].n2;
 				var n3 = meniuRestaurant[img][0].n3;
@@ -215,5 +214,4 @@ function restaurantPage() {
 			hidden.addClass('d-none');
 		}
 	});
-
 }

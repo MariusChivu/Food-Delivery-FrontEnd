@@ -15,9 +15,7 @@ function listaOrase() {
 
 	for(let i = 0; i < orase.length; i++) {
 		var oras = orase[i].oras;
-		var img = orase[i].img;
 		var link = orase[i].link;
-		var nume = orase[i].nume.toLocaleUpperCase();
 		var orasCont = document.getElementById("container-oras");		
 		orasCont.innerHTML += `<div class='box-oras col-md-2'><a href='oras.php?city=${link}'><span class='oras-nume'>${oras}</span><div class='img-box'><img src='assets/img/orase/${link}.jpg' alt='${oras}'></div></a></div>`;
 	}
@@ -31,8 +29,7 @@ function numeOras() {
 		var url_string = window.location.href;
 		var url = new URL(url_string);
 		var numeCity = url.searchParams.get("city").toUpperCase();
-		
-		console.log(`nume - ${link} --> ${numeCity}`)
+
 		if(link == numeCity) {
 			orasNume.innerHTML += nume;
 		} else {
