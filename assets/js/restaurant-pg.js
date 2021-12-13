@@ -1,18 +1,18 @@
 
 var restaurante = [
-	{id: 0, nume: "McDonald`s", img: "mcdonalds", star: 5, locatie: getDistance("44.428910, 26.104283")},
-	{id: 1, nume: "Domino`s Pizza", img: "dominos", star: 3.9, locatie: getDistance("44.434138, 26.107755")},
-	{id: 2, nume: "Jerry`s Pizza", img: "jerryspizza", star: 4, locatie: getDistance("44.440647, 26.116710")},
-	{id: 3, nume: "Presto Pizza", img: "prestopizza", star: 3, locatie: getDistance("44.440425, 26.132872")},
-	{id: 4, nume: "Subway", img: "subway", star: 3.2, locatie: getDistance("44.429094, 26.131227")},
-	{id: 5, nume: "Taco Bell", img: "tacobell", star: 2.4, locatie: getDistance("44.372915, 26.095956")},
-	{id: 6, nume: "Salad Box", img: "saladbox", star: 4.8, locatie: getDistance("44.449538, 26.110149")},
-	{id: 7, nume: "Chopstix", img: "Chopstix", star: 4.5, locatie: getDistance("44.424462, 26.129459")},
-	{id: 8, nume: "Calif", img: "Calif", star: 2, locatie: getDistance("44.420410, 26.115965")},
-	{id: 9, nume: "KFC", img: "kfc", star: 3.1, locatie: getDistance("44.420422, 26.104254")},
-	{id: 10, nume: "Taksim", img: "taksim", star: 3.4, locatie: getDistance("44.422709, 26.096995")},
-	{id: 11, nume: "Burger King", img: "burgerking", star: 2.6, locatie: getDistance("44.421054, 26.110150")},
-	{id: 12, nume: "Dristor Kebab", img: "dristorkebab", star: 4.2, locatie: getDistance("44.478573, 26.157943")},
+	{id: 0, nume: "McDonald`s", img: "mcdonalds", star: 5, locatie: "44.428910, 26.104283"},
+	{id: 1, nume: "Domino`s Pizza", img: "dominos", star: 3.9, locatie: "44.434138, 26.107755"},
+	{id: 2, nume: "Jerry`s Pizza", img: "jerryspizza", star: 4, locatie: "44.440647, 26.116710"},
+	{id: 3, nume: "Presto Pizza", img: "prestopizza", star: 3, locatie: "44.440425, 26.132872"},
+	{id: 4, nume: "Subway", img: "subway", star: 3.2, locatie: "44.429094, 26.131227"},
+	{id: 5, nume: "Taco Bell", img: "tacobell", star: 2.4, locatie: "44.372915, 26.095956"},
+	{id: 6, nume: "Salad Box", img: "saladbox", star: 4.8, locatie: "44.449538, 26.110149"},
+	{id: 7, nume: "Chopstix", img: "Chopstix", star: 4.5, locatie: "44.424462, 26.129459"},
+	{id: 8, nume: "Calif", img: "Calif", star: 2, locatie: "44.420410, 26.115965"},
+	{id: 9, nume: "KFC", img: "kfc", star: 3.1, locatie: "44.420422, 26.104254"},
+	{id: 10, nume: "Taksim", img: "taksim", star: 3.4, locatie: "44.422709, 26.096995"},
+	{id: 11, nume: "Burger King", img: "burgerking", star: 2.6, locatie: "44.421054, 26.110150"},
+	{id: 12, nume: "Dristor Kebab", img: "dristorkebab", star: 4.2, locatie: "44.478573, 26.157943"},
 ];
 
 function listaRestaurante(sortare) {
@@ -20,7 +20,7 @@ function listaRestaurante(sortare) {
 		
 		if(sortare == "sortare") {
 			restaurante = restaurante.sort(function(a,b) {
-				return  a.locatie - b.locatie;
+				return  getDistance(a.locatie) - getDistance(b.locatie);
 			}); 
 		} else {
 			restaurante = restaurante.sort(function(a,b) {
@@ -31,7 +31,7 @@ function listaRestaurante(sortare) {
 		var nume = restaurante[i].nume;
 		var img = restaurante[i].img;
 		var star = restaurante[i].star;
-		var distanta = restaurante[i].locatie;
+		var distanta = getDistance(restaurante[i].locatie);
 		var distanta2 = veziDistanta(distanta);
 		var orasRestaurantCont = document.getElementById("container-oras-restaurant");
 		var tooDistant;
