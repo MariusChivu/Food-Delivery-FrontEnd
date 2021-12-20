@@ -37,3 +37,4 @@
 <script src='assets/js/oras.js'></script>
 <script src='assets/js/restaurant-continut.js'></script>
 <script src='assets/js/restaurant-pg.js'></script>
+<script src='assets/js/cart.js'></script>
