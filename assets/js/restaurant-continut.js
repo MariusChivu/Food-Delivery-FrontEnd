@@ -330,7 +330,7 @@ produseRetaurant['jerryspizza'] = [
 ];
 
 produseRetaurant['dominos'] = [
-	{id: 0, catMeniu: "divProd0", nume: "Domino's Special", pret: "27",
+	{id: 0, catMeniu: "divProd0", nume: "Domino`s Special", pret: "27",
 		text: "Sos de pizza și mozzarella 100% naturală, șuncă, bacon, ciuperci, ardei verde și ceapă"},
 	
 	{id: 1, catMeniu: "divProd0", nume: "Quattro Stagioni", pret: "27",
