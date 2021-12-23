@@ -101,8 +101,6 @@ function loadCartItems() {
 			var idprod = cartArray[i].idprod;
 			var id = cartArray[i].id;
 
-			console.log(idprod)
-
 			cartDiv.innerHTML += `<tr><td><img src='assets/img/restaurante/${restCookie}/${idprod}.webp'></td><td>${title}</td><td>${price} RON</td><td><i class="fas fa-trash pointer" onclick="deleteCartItem(${id})"></i></td></tr>`;
 
 			sumCant += cartArray[i].cant;			  
