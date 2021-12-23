@@ -34,10 +34,6 @@ include("continut/meniu.php"); ?>
 	</div>
 </div>
 
-<div class='p-2 m-2'style='position: fixed; bottom: 10px; right: 10px; background: #999;'>
-	<button class='btn btn-info' onclick='clearCart()'>Stergere localstorage</button>
-</div>
-
 <?php include("continut/footer.php"); ?>
 
 <script>

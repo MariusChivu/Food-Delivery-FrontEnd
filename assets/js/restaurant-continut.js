@@ -178,7 +178,7 @@ produseRetaurant['mcdonalds'] = [
 	{id: 26, catMeniu: "divProd5", nume: "Cartofi prajiți porție medie", pret: "6.3",
 		text: "Cartofi preparaţi în ulei vegetal, săraţi manual înainte de a fi serviţi."},
 
-	{id: 26, catMeniu: "divProd5", nume: "Cartofi prajiți porție mare", pret: "7.8",
+	{id: 28, catMeniu: "divProd5", nume: "Cartofi prajiți porție mare", pret: "7.8",
 		text: "Cartofi preparaţi în ulei vegetal, săraţi manual înainte de a fi serviţi."},
 
 	{id: 29, catMeniu: "divProd5", nume: "Sos usturoi", pret: "2.5",
@@ -351,7 +351,7 @@ produseRetaurant['dominos'] = [
 	{id: 6, catMeniu: "divProd2", nume: "Carbonara", pret: "29",
 		text: "Sos cremos vegetal, mozzarella 100% naturală, blue cheese, extra blue cheese, bacon și parmezan"},
 
-	{id: 7, catMeniu: "divProd2", nume: "Fresh", pret: "29",
+	{id: 7, catMeniu: "divProd2", nume: "Fresh Pizza", pret: "29",
 		text: "Sos cremos vegetal, mozzarella 100% naturală, pui, porumb, frunze de spanac, brânză cheddar, roșii și busuioc"},	
 ];
 

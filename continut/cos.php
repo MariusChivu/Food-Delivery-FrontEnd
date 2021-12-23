@@ -5,7 +5,7 @@
 				<h4 class="modal-title"><i class="fas fa-shopping-cart"></i> Coșul tău</h4>
 				<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 			</div>
-			<div class="modal-body">
+			<div class="modal-body" id="cartBody">
 				<h2 id='cartRest'></h2>
 				<table class='table table-striped table-hover table-cos'>
 				<th>#</th>
@@ -15,9 +15,12 @@
 					<tbody id='cartDiv'></tbody>
 				</table>
 			</div>
+			<div class="modal-body" id="cartBody2">
+				<h3>Nu sunt produse adăugate în coș</h3>
+			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-success" data-bs-dismiss="modal">Finalizare comandă</button>
-				<button type="button" class="btn btn-warning" data-bs-dismiss="modal" onclick='clearCart()'>Resetare coș</button>
+				<button type="button" class="btn btn-success" data-bs-dismiss="modal" id="finalCart">Finalizare comandă</button>
+				<button type="button" class="btn btn-warning" data-bs-dismiss="modal" id="resetCart" onclick='clearCart()'>Resetare coș</button>
 				<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Închide</button>
 			</div>
 		</div>

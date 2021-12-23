@@ -82,20 +82,15 @@ function loadCartItems() {
 	cartDiv.innerHTML = "";
 	var sumCant = 0;
 	var restCookie = getCookie("restNameCookie");
+	var resetCart = document.getElementById("resetCart");
+	var finalCart = document.getElementById("finalCart");
+	var cartBody = document.getElementById("cartBody");
+	var cartBody2 = document.getElementById("cartBody2");
 
-	for(let i = 0; i < restaurante.length; i++) {
-		var url_string = window.location.href;
-		var url = new URL(url_string);
-		var numeRes = url.searchParams.get("rest").toUpperCase();
-		var numeArray = restaurante[i].nume.toUpperCase();
-		var numeRestKey;
-
-		if( inArray(numeRes) == true ) {
-			if(numeArray == numeRes) {
-				numeRestKey  = restaurante[i].img; 
-			}
-		}
-	}
+	cartBody.style.display = "block";
+	cartBody2.style.display = "none";
+	resetCart.style.display = "inline-block";
+	finalCart.style.display = "inline-block";
 
 	if(localStorage.getItem("cart") !== null) {
 		for (let i = 0; cartArray.length > i; i++) {
@@ -106,7 +101,7 @@ function loadCartItems() {
 			var idprod = cartArray[i].idprod;
 			var id = cartArray[i].id;
 
-			//console.log(restCookie)
+			console.log(idprod)
 
 			cartDiv.innerHTML += `<tr><td><img src='assets/img/restaurante/${restCookie}/${idprod}.webp'></td><td>${title}</td><td>${price} RON</td><td><i class="fas fa-trash pointer" onclick="deleteCartItem(${id})"></i></td></tr>`;
 
@@ -116,6 +111,14 @@ function loadCartItems() {
 		cartDiv.innerHTML += "<tr><td></td><td>Total coș</td><td>192.39</td><td>RON</td></tr>";
 		console.log(sumCant);
 	}
+
+	if(cartArray == "" || cartArray == null) {
+		cartBody2.style.display = "block";
+		cartBody.style.display = "none";
+		resetCart.style.display = "none";
+		finalCart.style.display = "none";
+	}
+
 	loadRestDetails()
 
 }
@@ -138,4 +141,5 @@ function clearCart() {
 		var cartRest = document.getElementById("cartRest");
 		cartRest.innerHTML = "";
 	localStorage.clear();
+	loadCartItems();
 }
