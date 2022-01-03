@@ -2,8 +2,8 @@
 var meniuRestaurant = [];
 meniuRestaurant['mcdonalds'] = [
 	{id: 0, n1: '<i class="fas fa-fire-alt"></i> Popular', n2: "Meniu Maxi", n3: "Sandvisuri", 
-	n4: "Salate", n5: "McCAFÉ", n6: "Cartofi si sosuri", n7: "Deserturi", 
-	n8: "Bauturi", n9: "Shake"}	
+	n4: "Salate", n5: "McCAFÉ", n6: "Cartofi și sosuri", n7: "Deserturi", 
+	n8: "Băuturi", n9: "Shake"}	
 ];
 
 meniuRestaurant['saladbox'] = [
