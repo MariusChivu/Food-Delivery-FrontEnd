@@ -2,12 +2,9 @@ $(document).on('click', 'li.pointer', function () {
 	var title_parent = $(this).children("div");
 	var title =  $(title_parent).children("h4").attr("title");
 	var idprod =  $(title_parent).children("h4").attr("idprod");
-
 	var price_parent = $(this).children("div");
 	var price =  $(price_parent).children("p.pret").attr("price");
-
 	var cant = 1;
-	
 	var storage = JSON.parse(localStorage.getItem("cart"));
 	var localStorageId;
 	if(storage==null){
@@ -28,9 +25,7 @@ $(document).on('click', 'li.pointer', function () {
 		if(setRestDetails() != false) {
 			localStorage.setItem("cart",JSON.stringify(storage));
 		}
-	
 	loadCartItems();
-
 });
 
 function setRestDetails() {
@@ -72,8 +67,6 @@ function loadRestDetails() {
 
 function loadCartItems() {
 	var cartArray = JSON.parse(localStorage.getItem("cart"));
-	console.log(cartArray);  
-
 	var cartDiv = document.getElementById("cartDiv");
 	cartDiv.innerHTML = "";
 	var sumPrice = 0;
@@ -100,7 +93,6 @@ function loadCartItems() {
 			var id = cartArray[i].id;
 
 			cartDiv.innerHTML += `<tr><td><img src='assets/img/restaurante/${restCookie}/${idprod}.webp'></td><td>${title}</td><td>${price} RON</td><td><i class="fas fa-trash pointer" onclick="deleteCartItem(${id})"></i></td></tr>`;
-
 			sumPrice += price;
 			sumCount += cant;			  
 		}
@@ -110,8 +102,6 @@ function loadCartItems() {
 		cartDiv.innerHTML += `<tr><td></td><td>Total coș</td><td>${sumPrice}</td><td>RON</td></tr>`;
 		cartDiv.innerHTML += `<tr><td></td><td>Taxă de livrare</td><td>${livrare}</td><td>RON</td></tr>`;
 		cartDiv.innerHTML += `<tr><td></td><td>Total coș + livrare</td><td>${total}</td><td>RON</td></tr>`;
-		console.log(sumCount);
-		
 		var countCart = document.getElementById("cartCount");
 		countCart.innerHTML = parseInt(sumCount);
 	}
@@ -122,18 +112,13 @@ function loadCartItems() {
 		resetCart.style.display = "none";
 		finalCart.style.display = "none";
 	}
-
 	loadRestDetails()
-
 }
 
 function deleteCartItem(id) {
 	let items = JSON.parse(localStorage.getItem("cart"))
-	// Get index of object
 	const index = items.indexOf(id)
-	// Splice the array at the index of your object
 	items.splice(index, 1)
-	// Save back to localStorage
 	localStorage.setItem("cart", JSON.stringify(items))
 
 	loadCartItems();
@@ -152,5 +137,4 @@ function clearCart() {
 
 window.addEventListener('load', function() {
 	loadCartItems();
-
 });
