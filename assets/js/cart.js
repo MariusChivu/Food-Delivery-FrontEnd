@@ -33,11 +33,6 @@ $(document).on('click', 'li.pointer', function () {
 
 });
 
-window.addEventListener('load', function() {
-	loadCartItems();
-
-});
-
 function setRestDetails() {
 	for(let i = 0; i < restaurante.length; i++) {
 		var url_string = window.location.href;
@@ -49,12 +44,13 @@ function setRestDetails() {
 		if( inArray(numeRes) == true ) {
 			if(numeArray == numeRes) {
 				var storageCartRest = JSON.parse(localStorage.getItem("cartRest"));
+				var storageCart = JSON.parse(localStorage.getItem("cart"));
 				if(storageCartRest==null){
 					storageCartRest = [];
 				}
 				
 				if(storageCartRest != numeRes) {
-					if(storageCartRest != "") {
+					if(storageCart != "" && storageCart != null) {
 						alert("ai alt restaurant");
 						return false;
 					} else {
@@ -80,12 +76,15 @@ function loadCartItems() {
 
 	var cartDiv = document.getElementById("cartDiv");
 	cartDiv.innerHTML = "";
-	var sumCant = 0;
+	var sumPrice = 0;
+	var sumCount = 0;
 	var restCookie = getCookie("restNameCookie");
 	var resetCart = document.getElementById("resetCart");
 	var finalCart = document.getElementById("finalCart");
 	var cartBody = document.getElementById("cartBody");
 	var cartBody2 = document.getElementById("cartBody2");
+	var livrare = 7.99;
+	var total;
 
 	cartBody.style.display = "block";
 	cartBody2.style.display = "none";
@@ -94,20 +93,27 @@ function loadCartItems() {
 
 	if(localStorage.getItem("cart") !== null) {
 		for (let i = 0; cartArray.length > i; i++) {
-			//var countCart = 
 			var title = cartArray[i].title;
-			var price = cartArray[i].price;
+			var price = parseFloat(cartArray[i].price);
 			var cant = cartArray[i].cant;
 			var idprod = cartArray[i].idprod;
 			var id = cartArray[i].id;
 
 			cartDiv.innerHTML += `<tr><td><img src='assets/img/restaurante/${restCookie}/${idprod}.webp'></td><td>${title}</td><td>${price} RON</td><td><i class="fas fa-trash pointer" onclick="deleteCartItem(${id})"></i></td></tr>`;
 
-			sumCant += cartArray[i].cant;			  
+			sumPrice += price;
+			sumCount += cant;			  
 		}
-		cartDiv.innerHTML += "<tr><td></td><td>Taxă de livrare</td><td>7.99</td><td>RON</td></tr>";
-		cartDiv.innerHTML += "<tr><td></td><td>Total coș</td><td>192.39</td><td>RON</td></tr>";
-		console.log(sumCant);
+
+		total = livrare + sumPrice;
+		total = total.toFixed(2);
+		cartDiv.innerHTML += `<tr><td></td><td>Total coș</td><td>${sumPrice}</td><td>RON</td></tr>`;
+		cartDiv.innerHTML += `<tr><td></td><td>Taxă de livrare</td><td>${livrare}</td><td>RON</td></tr>`;
+		cartDiv.innerHTML += `<tr><td></td><td>Total coș + livrare</td><td>${total}</td><td>RON</td></tr>`;
+		console.log(sumCount);
+		
+		var countCart = document.getElementById("cartCount");
+		countCart.innerHTML = parseInt(sumCount);
 	}
 
 	if(cartArray == "" || cartArray == null) {
@@ -139,5 +145,12 @@ function clearCart() {
 		var cartRest = document.getElementById("cartRest");
 		cartRest.innerHTML = "";
 	localStorage.clear();
+	var countCart = document.getElementById("cartCount");
+		countCart.innerHTML = 0;
 	loadCartItems();
 }
+
+window.addEventListener('load', function() {
+	loadCartItems();
+
+});
