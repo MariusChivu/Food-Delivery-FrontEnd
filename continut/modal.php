@@ -1,4 +1,3 @@
-
 <div class="modal fade" id="conectare">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -7,7 +6,6 @@
 				<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 			</div>
 			<div class="modal-body">
-
 				<ul class="nav nav-tabs" id="myTab" role="tablist">
 					<li class="nav-item" role="presentation">
 						<button class="nav-link active" 
@@ -63,6 +61,26 @@
 						</div>
 					</div>
 				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="modal fade" id="modalAltRestaurant">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title"><i class="fas fa-exclamation-triangle text-danger"></i> Restaurant</h4>
+				<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+			</div>
+			<div class="modal-body">
+				<p>Ai adăugat deja produse din alt restaurant !</p>
+				<p>Dacă vrei să comanzi din altă locație trebuie să resetezi coșul.</p>
+			</div>
+			<div class="modal-footer">
+			<button type="button" class="btn btn-warning" data-bs-dismiss="modal" id="resetCart" onclick='clearCart()'>Resetare coș</button>
+				<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Închide</button>
 			</div>
 		</div>
 	</div>

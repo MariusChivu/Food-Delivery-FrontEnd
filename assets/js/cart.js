@@ -46,7 +46,7 @@ function setRestDetails() {
 				
 				if(storageCartRest != numeRes) {
 					if(storageCart != "" && storageCart != null) {
-						alert("ai alt restaurant");
+						$('#modalAltRestaurant').modal('toggle');
 						return false;
 					} else {
 						localStorage.setItem("cartRest",JSON.stringify(numeRes));
@@ -61,7 +61,6 @@ function setRestDetails() {
 function loadRestDetails() {
 	var cartRest = document.getElementById("cartRest");
 	var name =  JSON.parse(localStorage.getItem("cartRest"));
-
 	cartRest.innerHTML = name;
 }
 
