@@ -179,13 +179,16 @@ function restaurantPage() {
 					var divProd = document.getElementById(dvProd);
 
 					var pointer;
+					var cartIconPlus;
 					if(getCookie("position") == undefined ){
 						pointer = "";
+						cartIconPlus = "";
 					} else {
 						pointer = "pointer";
+						cartIconPlus = "<i class='fas fa-cart-plus'></i>";
 					}
 
-					divProd.innerHTML += `<li class='list-group-item col-md-5 m-2 p-3 border border-dark d-flex justify-content-between align-items-center produs ${pointer}' id='prod${z}'><div class='produs-text'><h4 title='${nume}' idprod='prod${imgp}'>${nume}</h4><p>${text}</p><p class='pret' price='${pret}'>${pret} RON</p></div><div class='produs-img'><img src='assets/img/restaurante/${img}/prod${imgp}.webp' alt='${nume}' width='150px'></div></li>`;	
+					divProd.innerHTML += `<li class='list-group-item col-md-5 m-2 p-3 border border-dark d-flex justify-content-between align-items-center produs ${pointer}' id='prod${z}'><div class='produs-text'><h4 title='${nume}' idprod='prod${imgp}'>${nume}</h4><p>${text}</p><p class='pret' price='${pret}'>${cartIconPlus} ${pret} RON</p></div><div class='produs-img'><img src='assets/img/restaurante/${img}/prod${imgp}.webp' alt='${nume}' width='150px'></div></li>`;	
 				}
 			}
 				
