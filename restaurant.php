@@ -17,12 +17,10 @@ include("continut/meniu.php"); ?>
 		</div>
 	</div>
 
-	<div class='container restaurant-meniu glass-bg mt-5 mb-5'>
-		<div class='row p-2' id='meniu'>
-			<ul class="nav" id="meniu-item">
-				<!-- meniu generat din javascript  -->
-			</ul>
-		</div>
+	<div class='container-fluid  restaurant-meniu glass-bg2 mt-5 mb-5 p-2' id='meniu'>
+		<ul class="nav" id="meniu-item">
+			<!-- meniu generat din javascript  -->
+		</ul>
 	</div>
 
 	<div class='hidden-div mt-5 mb-5 d-none'></div>

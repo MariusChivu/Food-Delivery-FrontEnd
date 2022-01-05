@@ -4,7 +4,7 @@ include("continut/meniu.php"); ?>
 <div class='container header-locatie'>
 	<div class='row'>
 		<div class='col-lg-7'>
-			<div class='bara-header glass-bg'>
+			<div class='bara-header glass-bg3'>
 				<h1>Este mancarea pe care o dorești livrată acasă sau la birou!</h1>
 				<div class='bara-locatie' onclick='getLocation()'>
 					<input type='text' class='form-control form-control-lg shadow-none pointer' id='inputLocatie' placeholder='Locația mea'>

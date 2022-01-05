@@ -16,9 +16,19 @@ body {
 	cursor: pointer;
 }
 
-.glass-bg {
-	background-color: $glassBg;  
+.glass-bg,
+.glass-bg2,
+.glass-bg3 {
+	background-color: $white;  
 	backdrop-filter: blur(7px);
 	-webkit-backdrop-filter: blur(7px);
 	box-shadow: 0px 0px 5px 0px $shadowColor;
+}
+
+.glass-bg2 {
+	box-shadow: 0px 0px 15px -10px #000000bf;
+	transition: box-shadow 0.3s;
+}
+.glass-bg3 {
+	background-color: $glassBg; 
 }
