@@ -86,7 +86,7 @@ function createProd(n1, n) {
 	var xn = n1
 	var yn = `<li class="nav-item"><a class="nav-link" href="#n${n}" id="active">${xn}</a></li>`;
 	divMenu.innerHTML += yn;
-	divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-center" id="divProd${n}"></ul></div>`;
+	divCat.innerHTML += `<div id="n${n}" class="pt-5 mb-5"><h1 class="mt-5 d-flex align-items-center">${xn}</h1><ul class="list-group list-group-horizontal row d-flex justify-content-between" id="divProd${n}"></ul></div>`;
 
 }
 
@@ -181,14 +181,14 @@ function restaurantPage() {
 					var pointer;
 					var cartIconPlus;
 					if(getCookie("position") == undefined ){
-						pointer = "";
+						locationInfo = "<p class='locationInfo'><i class='fas fa-map-marker-alt'></i>Avem nevoie de locația ta pentru a putea comanda.</p>";
 						cartIconPlus = "";
 					} else {
-						pointer = "pointer";
-						cartIconPlus = "<i class='fas fa-cart-plus'></i>";
+						locationInfo = "";
+						cartIconPlus = `<i class='fas fa-cart-plus pointer' idprod='prod${imgp}' title='${nume}' price='${pret}'></i>`;
 					}
 
-					divProd.innerHTML += `<li class='list-group-item col-md-5 m-2 p-3 border border-dark d-flex justify-content-between align-items-center produs ${pointer}' id='prod${z}'><div class='produs-text'><h4 title='${nume}' idprod='prod${imgp}'>${nume}</h4><p>${text}</p><p class='pret' price='${pret}'>${cartIconPlus} ${pret} RON</p></div><div class='produs-img'><img src='assets/img/restaurante/${img}/prod${imgp}.webp' alt='${nume}' width='150px'></div></li>`;	
+					divProd.innerHTML += `<li class='list-group-item col-md-5 m-2 mb-5 p-3 border border-dark d-flex justify-content-between align-items-center produs' id='prod${z}'><div class='produs-text'><h4>${nume}</h4><p>${text}</p><p class='pret'>${cartIconPlus} ${pret} RON</p> ${locationInfo}</div><div class='produs-img'><img src='assets/img/restaurante/${img}/prod${imgp}.webp' alt='${nume}' width='150px'></div></li>`;	
 				}
 			}
 				

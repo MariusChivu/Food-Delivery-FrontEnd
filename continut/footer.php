@@ -38,3 +38,4 @@
 <script src='assets/js/restaurant-continut.js'></script>
 <script src='assets/js/restaurant-pg.js'></script>
 <script src='assets/js/cart.js'></script>
+<script src='assets/js/offCache.js'></script>

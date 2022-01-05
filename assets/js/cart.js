@@ -1,9 +1,7 @@
-$(document).on('click', 'li.pointer', function () {
-	var title_parent = $(this).children("div");
-	var title =  $(title_parent).children("h4").attr("title");
-	var idprod =  $(title_parent).children("h4").attr("idprod");
-	var price_parent = $(this).children("div");
-	var price =  $(price_parent).children("p.pret").attr("price");
+$(document).on('click', 'i.pointer', function () {
+	var title =  $(this).attr("title");
+	var idprod =  $(this).attr("idprod");
+	var price =  $(this).attr("price");
 	var cant = 1;
 	var storage = JSON.parse(localStorage.getItem("cart"));
 	var localStorageId;
