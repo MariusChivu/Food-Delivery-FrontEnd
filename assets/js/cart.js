@@ -1,4 +1,4 @@
-$(document).on('click', 'i.pointer', function () {
+$(document).on('click', 'i.addCart', function () {
 	var title =  $(this).attr("title");
 	var idprod =  $(this).attr("idprod");
 	var price =  $(this).attr("price");
@@ -115,8 +115,10 @@ function loadCartItems() {
 function deleteCartItem(id) {
 	let items = JSON.parse(localStorage.getItem("cart"))
 	const index = items.indexOf(id)
+	console.log(items)
 	items.splice(index, 1)
 	localStorage.setItem("cart", JSON.stringify(items))
+	console.log(items)
 
 	loadCartItems();
 }
